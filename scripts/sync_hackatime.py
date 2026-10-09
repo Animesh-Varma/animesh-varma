@@ -2,6 +2,7 @@ import json
 import os
 import re
 import urllib.request
+from datetime import datetime, timezone, timedelta
 
 API_KEY = os.environ.get("HACKATIME_API_KEY")
 GITHUB_USERNAME = "animesh-varma"
@@ -90,6 +91,16 @@ def format_stats(data):
     payload = data.get("data", data)
     raw_projects = payload.get("projects", [])
 
-    footer = f"\n*Tracked via [Hackatime](https://hackatime.hackclub.com/@{GITHUB_USERNAME}).*"
+    now_utc = datetime.now(timezone.utc)
+    
+    current_slot_hour = (now_utc.hour // 3) * 3
+    next_slot = now_utc.replace(hour=current_slot_hour, minute=15, second=0, microsecond=0)
+    while next_slot <= now_utc:
+        next_slot += timedelta(hours=3)
+
+    last_str = now_utc.strftime("%b %d, %H:%M UTC")
+    next_str = next_slot.strftime("%b %d, %H:%M UTC")
+
+    footer = f"\n*Last synced: {last_str} | Next sync: ~{next_str} via [Hackatime](https://hackatime.hackclub.com/@{GITHUB_USERNAME}).*"
     if not raw_projects:
         return f"*No tracked coding activity recorded for the past
