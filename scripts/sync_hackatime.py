@@ -92,7 +92,6 @@ def format_stats(data):
     payload = data.get("data", data)
     raw_projects = payload.get("projects", [])
 
-    # Next sync calculation for cron '15 */3 * * *'
     now_utc = datetime.now(timezone.utc)
     current_slot_hour = (now_utc.hour // 3) * 3
     next_slot = now_utc.replace(hour=current_slot_hour, minute=15, second=0, microsecond=0)
@@ -101,7 +100,7 @@ def format_stats(data):
 
     last_str = now_utc.strftime("%b %d, %H:%M UTC")
     next_str = next_slot.strftime("%b %d, %H:%M UTC")
-    footer = f"\n*Last synced: {last_str} | Next sync: ~{next_str} via [Hackatime](https://hackatime.hackclub.com/@{GITHUB_USERNAME}).*"
+    footer = f"\n*Last synced: {last_str} | Next sync: ~{next_str} (every 3h) via [Hackatime](https://hackatime.hackclub.com/@{GITHUB_USERNAME}).*"
 
     if not raw_projects:
         return f"*No tracked coding activity recorded for the past 7 days.*\n{footer}"
@@ -147,18 +146,11 @@ def format_stats(data):
             })
 
     main_rows = list(standalone_records)
-    active_groups = {}
-
     for g_name, bucket in group_buckets.items():
         if bucket["total_seconds"] > 0:
-            cfg = GROUPS_CONFIG[g_name]
-            active_groups[g_name] = bucket
-            anchor = cfg.get("anchor_id", "group-breakdown")
-            tag_label = cfg.get("tag", "Cluster")
-            
             main_rows.append({
-                "name": f"{g_name} ({tag_label}) ▾",
-                "url": f"#{anchor}",
+                "name": g_name,
+                "bucket": bucket,
                 "time_text": format_seconds(bucket["total_seconds"]),
                 "percent": bucket["total_percent"],
                 "is_group": True,
@@ -166,79 +158,104 @@ def format_stats(data):
 
     main_rows.sort(key=lambda r: r["percent"], reverse=True)
 
-    # 1. Main Table Construction
+    # Build HTML table
     lines = [
-        "| Project | Time Invested | Share |",
-        "| :--- | :--- | :--- |",
+        "<table>",
+        "  <thead>",
+        "    <tr>",
+        '      <th align="left">Project</th>',
+        '      <th align="left">Time Invested</th>',
+        '      <th align="left">Share</th>',
+        "    </tr>",
+        "  </thead>",
+        "  <tbody>",
     ]
 
     for r in main_rows[:8]:
         bar = make_bar(r["percent"])
-        lines.append(f"| [{r['name']}]({r['url']}) | {r['time_text']} | `{bar}` {r['percent']:>5.1f}% |")
+        if not r["is_group"]:
+            lines.append("    <tr>")
+            lines.append(f'      <td><a href="{r["url"]}">{r["name"]}</a></td>')
+            lines.append(f'      <td>{r["time_text"]}</td>')
+            lines.append(f'      <td><code>{bar}</code> {r["percent"]:>5.1f}%</td>')
+            lines.append("    </tr>")
+        else:
+            g_name = r["name"]
+            bucket = r["bucket"]
+            cfg = GROUPS_CONFIG[g_name]
+            tag_label = cfg.get("tag", "Cluster")
+            total_sec = bucket["total_seconds"]
 
-    dropdown_lines = []
-    for g_name, bucket in active_groups.items():
-        cfg = GROUPS_CONFIG[g_name]
-        anchor = cfg.get("anchor_id", "group-breakdown")
-        tag_label = cfg.get("tag", "Cluster")
-        total_sec = bucket["total_seconds"]
+            sub_records = []
+            seen = set()
 
-        sub_records = []
-        seen = set()
+            for known in cfg.get("known_projects", []):
+                k_lower = known.lower()
+                seen.add(k_lower)
+                if k_lower in bucket["tracked_projects"]:
+                    item = bucket["tracked_projects"][k_lower]
+                    sec = item["seconds"]
+                    t_str = item["time_text"]
+                    d_name = item["display_name"]
+                else:
+                    sec = 0.0
+                    t_str = "0 mins"
+                    d_name = known
 
-        for known in cfg.get("known_projects", []):
-            k_lower = known.lower()
-            seen.add(k_lower)
-            if k_lower in bucket["tracked_projects"]:
-                item = bucket["tracked_projects"][k_lower]
-                sec = item["seconds"]
-                t_str = item["time_text"]
-                d_name = item["display_name"]
-            else:
-                sec = 0.0
-                t_str = "0 mins"
-                d_name = known
-
-            share = (sec / total_sec * 100.0) if total_sec > 0 else 0.0
-            sub_records.append({
-                "name": d_name,
-                "url": resolve_url(d_name),
-                "time_text": t_str,
-                "seconds": sec,
-                "share": share,
-            })
-
-        for k_lower, item in bucket["tracked_projects"].items():
-            if k_lower not in seen:
-                share = (item["seconds"] / total_sec * 100.0) if total_sec > 0 else 0.0
+                share = (sec / total_sec * 100.0) if total_sec > 0 else 0.0
                 sub_records.append({
-                    "name": item["display_name"],
-                    "url": resolve_url(item["display_name"]),
-                    "time_text": item["time_text"],
-                    "seconds": item["seconds"],
+                    "name": d_name,
+                    "url": resolve_url(d_name),
+                    "time_text": t_str,
                     "share": share,
+                    "seconds": sec,
                 })
 
-        sub_records.sort(key=lambda s: s["seconds"], reverse=True)
+            for k_lower, item in bucket["tracked_projects"].items():
+                if k_lower not in seen:
+                    share = (item["seconds"] / total_sec * 100.0) if total_sec > 0 else 0.0
+                    sub_records.append({
+                        "name": item["display_name"],
+                        "url": resolve_url(item["display_name"]),
+                        "time_text": item["time_text"],
+                        "share": share,
+                        "seconds": item["seconds"],
+                    })
 
-        dropdown_lines.extend([
-            "",
-            f'<a id="{anchor}"></a>',
-            "<details>",
-            f"<summary><strong>{g_name} ({tag_label})</strong> ▾ <em>(click to expand sub-projects)</em></summary>",
-            "<br>",
-            "",
-            "| Sub-project | Time Invested | Share of Group |",
-            "| :--- | :--- | :--- |",
-        ])
+            sub_records.sort(key=lambda s: s["seconds"], reverse=True)
 
-        for s in sub_records:
-            s_bar = make_bar(s["share"])
-            dropdown_lines.append(f"| [{s['name']}]({s['url']}) | {s['time_text']} | `{s_bar}` {s['share']:>5.1f}% |")
+            lines.append("    <tr>")
+            lines.append('      <td colspan="3">')
+            lines.append("        <details>")
+            lines.append(f'          <summary><strong>{g_name} ({tag_label})</strong> ▾ &nbsp;&nbsp; {r["time_text"]} &nbsp;&nbsp; <code>{bar}</code> {r["percent"]:>5.1f}%</summary>')
+            lines.append("          <br>")
+            lines.append("          <table>")
+            lines.append("            <thead>")
+            lines.append("              <tr>")
+            lines.append('                <th align="left">Sub-project</th>',
+                         '                <th align="left">Time Invested</th>',
+                         '                <th align="left">Share of Cluster</th>')
+            lines.append("              </tr>")
+            lines.append("            </thead>")
+            lines.append("            <tbody>")
+            for s in sub_records:
+                s_bar = make_bar(s["share"])
+                lines.append("              <tr>")
+                lines.append(f'                <td><a href="{s["url"]}">{s["name"]}</a></td>')
+                lines.append(f'                <td>{s["time_text"]}</td>')
+                lines.append(f'                <td><code>{s_bar}</code> {s["share"]:>5.1f}%</td>')
+                lines.append("              </tr>")
+            lines.append("            </tbody>")
+            lines.append("          </table>")
+            lines.append("          <br>")
+            lines.append("        </details>")
+            lines.append("      </td>")
+            lines.append("    </tr>")
 
-        dropdown_lines.append("</details>")
+    lines.append("  </tbody>")
+    lines.append("</table>")
 
-    return "\n".join(lines) + ("\n" + "\n".join(dropdown_lines) if dropdown_lines else "") + f"\n{footer}"
+    return "\n".join(lines) + f"\n{footer}"
 
 def update_readme():
     stats = fetch_hackatime_stats()
