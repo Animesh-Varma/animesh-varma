@@ -32,5 +32,6 @@ jobs:
           git add README.md
           if ! git diff --staged --quiet; then
             git commit -m "chore: sync weekly development focus"
+            git pull --rebase origin main
             git push
           fi
