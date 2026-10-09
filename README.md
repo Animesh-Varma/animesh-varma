@@ -6,25 +6,72 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 *Note: If a project link returns a 404, the repository is currently private or in active development and has not been publicly released yet.*
 
 <!-- HACKATIME-START -->
-| Project | Time Invested | Share |
-| :--- | :--- | :--- |
-| [BambuScribe](https://github.com/animesh-varma/BambuScribe) | 0 hrs 38 mins | `█████████████████░`  94.6% |
-| [Project Aetherion (Cluster) ▾](#project-aetherion) | 2 mins | `█░░░░░░░░░░░░░░░░░`   5.2% |
-| [STATERA](https://github.com/animesh-varma/STATERA) | 0 hrs 0 mins | `░░░░░░░░░░░░░░░░░░`   0.2% |
+<table>
+  <thead>
+    <tr>
+      <th align="left">Project</th>
+      <th align="left">Time Invested</th>
+      <th align="left">Share</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/animesh-varma/BambuScribe">BambuScribe</a></td>
+      <td>0 hrs 38 mins</td>
+      <td><code>█████████████████░</code>  94.6%</td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <details>
+          <summary><strong>Project Aetherion (Cluster)</strong> ▾ &nbsp;&nbsp; 2 mins &nbsp;&nbsp; <code>█░░░░░░░░░░░░░░░░░</code>   5.2%</summary>
+          <br>
+          <table>
+            <thead>
+              <tr>
+                <th align="left">Sub-project</th>
+                <th align="left">Time Invested</th>
+                <th align="left">Share of Cluster</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="https://github.com/animesh-varma/aetherion-app">Aetherion-App</a></td>
+                <td>0 hrs 2 mins</td>
+                <td><code>██████████████████</code>  98.4%</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/animesh-varma/Aetherion-Internal">Aetherion-Internal</a></td>
+                <td>0 hrs 0 mins</td>
+                <td><code>░░░░░░░░░░░░░░░░░░</code>   1.6%</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/animesh-varma/Aetherion">Aetherion</a></td>
+                <td>0 mins</td>
+                <td><code>░░░░░░░░░░░░░░░░░░</code>   0.0%</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/animesh-varma/Aetherion-SDK">Aetherion-SDK</a></td>
+                <td>0 mins</td>
+                <td><code>░░░░░░░░░░░░░░░░░░</code>   0.0%</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/animesh-varma/Aetherion-hub">Aetherion-hub</a></td>
+                <td>0 mins</td>
+                <td><code>░░░░░░░░░░░░░░░░░░</code>   0.0%</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+        </details>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/animesh-varma/STATERA">STATERA</a></td>
+      <td>0 hrs 0 mins</td>
+      <td><code>░░░░░░░░░░░░░░░░░░</code>   0.2%</td>
+    </tr>
+  </tbody>
+</table>
 
-<a id="project-aetherion"></a>
-<details>
-<summary><strong>Project Aetherion (Cluster)</strong> ▾ <em>(click to expand sub-projects)</em></summary>
-<br>
-
-| Sub-project | Time Invested | Share of Group |
-| :--- | :--- | :--- |
-| [Aetherion](https://github.com/animesh-varma/Aetherion) | 0 hrs 2 mins | `██████████████████`  98.4% |
-| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 0 hrs 0 mins | `░░░░░░░░░░░░░░░░░░`   1.6% |
-| [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
-| [Aetherion-SDK](https://github.com/animesh-varma/Aetherion-SDK) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
-| [Aetherion-hub](https://github.com/animesh-varma/Aetherion-hub) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
-</details>
-
-*Last synced: Oct 09, 13:36 UTC | Next sync: ~Oct 09, 15:15 UTC (every 3h) via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Oct 09, 20:06 UTC | Next sync: ~Oct 09, 21:15 UTC (every 3h) via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
