@@ -16,14 +16,13 @@ END_TAG = "<!-- HACKATIME-END -->"
 
 PROJECT_ALIASES = {
     "plotter": "BambuScribe",
-    "Aetherion": "Aetherion-App",
-    "Aetherion-home": "Aetherion",
+    "aetherion": "Aetherion-App",
+    "aetherion-home": "Aetherion",
 }
 
 GROUPS_CONFIG = {
     "Project Aetherion": {
         "tag": "Cluster",
-        "anchor_id": "project-aetherion",
         "keywords": ["aetherion"],
         "known_projects": [
             "Aetherion",
@@ -158,7 +157,6 @@ def format_stats(data):
 
     main_rows.sort(key=lambda r: r["percent"], reverse=True)
 
-    # Build HTML table
     lines = [
         "<table>",
         "  <thead>",
@@ -232,9 +230,11 @@ def format_stats(data):
             lines.append("          <table>")
             lines.append("            <thead>")
             lines.append("              <tr>")
-            lines.append('                <th align="left">Sub-project</th>',
-                         '                <th align="left">Time Invested</th>',
-                         '                <th align="left">Share of Cluster</th>')
+            lines.extend([
+                '                <th align="left">Sub-project</th>',
+                '                <th align="left">Time Invested</th>',
+                '                <th align="left">Share of Cluster</th>'
+            ])
             lines.append("              </tr>")
             lines.append("            </thead>")
             lines.append("            <tbody>")
