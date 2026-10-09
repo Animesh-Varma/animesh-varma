@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,5 +35,5 @@ jobs:
           if ! git diff --staged --quiet; then
             git commit -m "chore: sync weekly development focus"
             git pull --rebase origin main
-            git push
+            git push origin main
           fi
