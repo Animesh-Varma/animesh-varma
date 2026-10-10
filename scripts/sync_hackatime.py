@@ -72,6 +72,8 @@ def format_seconds(seconds):
         return f"{hours} hrs {mins} mins" if mins > 0 else f"{hours} hrs"
     elif mins > 0:
         return f"{mins} mins"
+    elif seconds > 0:
+        return "< 1 min"
     return "0 mins"
 
 def resolve_display_name(raw_name):
@@ -123,7 +125,7 @@ def format_stats(data):
         display_name = resolve_display_name(raw_name)
         total_sec = float(p.get("total_seconds", 0.0))
         pct = float(p.get("percent", 0.0))
-        time_text = p.get("text", format_seconds(total_sec))
+        time_text = format_seconds(total_sec)
 
         group_name = resolve_group(display_name)
         if group_name:
