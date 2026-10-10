@@ -99,7 +99,7 @@ def format_stats(data):
 
     last_str = now_utc.strftime("%b %d, %H:%M UTC")
     next_str = next_slot.strftime("%b %d, %H:%M UTC")
-    footer = f"\n*Last synced: {last_str} | Next sync: ~{next_str} (every 3h) via [Hackatime](https://hackatime.hackclub.com/@{GITHUB_USERNAME}).*"
+    footer = f"\n*Last synced: {last_str} | Next sync: ~{next_str} via [Hackatime](https://hackatime.hackclub.com/@{GITHUB_USERNAME}).*"
 
     if not raw_projects:
         return f"*No tracked coding activity recorded for the past 7 days.*\n{footer}"
