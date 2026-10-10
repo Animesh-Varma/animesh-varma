@@ -145,11 +145,15 @@ def format_stats(data):
             })
 
     main_rows = list(standalone_records)
+    active_groups = {}
+
     for g_name, bucket in group_buckets.items():
         if bucket["total_seconds"] > 0:
+            active_groups[g_name] = bucket
+            cfg = GROUPS_CONFIG[g_name]
+            tag_label = cfg.get("tag", "Cluster")
             main_rows.append({
-                "name": g_name,
-                "bucket": bucket,
+                "name": f"**{g_name}** ({tag_label})",
                 "time_text": format_seconds(bucket["total_seconds"]),
                 "percent": bucket["total_percent"],
                 "is_group": True,
@@ -157,105 +161,82 @@ def format_stats(data):
 
     main_rows.sort(key=lambda r: r["percent"], reverse=True)
 
+    # 1. Main Segmented Table
     lines = [
-        "<table>",
-        "  <thead>",
-        "    <tr>",
-        '      <th align="left">Project</th>',
-        '      <th align="left">Time Invested</th>',
-        '      <th align="left">Share</th>',
-        "    </tr>",
-        "  </thead>",
-        "  <tbody>",
+        "| Project | Time | Share |",
+        "| :--- | :--- | :--- |",
     ]
 
     for r in main_rows[:8]:
         bar = make_bar(r["percent"])
-        if not r["is_group"]:
-            lines.append("    <tr>")
-            lines.append(f'      <td><a href="{r["url"]}">{r["name"]}</a></td>')
-            lines.append(f'      <td>{r["time_text"]}</td>')
-            lines.append(f'      <td><code>{bar}</code> {r["percent"]:>5.1f}%</td>')
-            lines.append("    </tr>")
+        if r["is_group"]:
+            name_cell = r["name"]
         else:
-            g_name = r["name"]
-            bucket = r["bucket"]
-            cfg = GROUPS_CONFIG[g_name]
-            tag_label = cfg.get("tag", "Cluster")
-            total_sec = bucket["total_seconds"]
+            name_cell = f"[{r['name']}]({r['url']})"
+        lines.append(f"| {name_cell} | {r['time_text']} | `{bar}` {r['percent']:>5.1f}% |")
 
-            sub_records = []
-            seen = set()
+    # 2. Collapsible Details Block
+    details_blocks = []
+    for g_name, bucket in active_groups.items():
+        cfg = GROUPS_CONFIG[g_name]
+        total_sec = bucket["total_seconds"]
 
-            for known in cfg.get("known_projects", []):
-                k_lower = known.lower()
-                seen.add(k_lower)
-                if k_lower in bucket["tracked_projects"]:
-                    item = bucket["tracked_projects"][k_lower]
-                    sec = item["seconds"]
-                    t_str = item["time_text"]
-                    d_name = item["display_name"]
-                else:
-                    sec = 0.0
-                    t_str = "0 mins"
-                    d_name = known
+        sub_records = []
+        seen = set()
 
-                share = (sec / total_sec * 100.0) if total_sec > 0 else 0.0
+        for known in cfg.get("known_projects", []):
+            k_lower = known.lower()
+            seen.add(k_lower)
+            if k_lower in bucket["tracked_projects"]:
+                item = bucket["tracked_projects"][k_lower]
+                sec = item["seconds"]
+                t_str = item["time_text"]
+                d_name = item["display_name"]
+            else:
+                sec = 0.0
+                t_str = "0 mins"
+                d_name = known
+
+            share = (sec / total_sec * 100.0) if total_sec > 0 else 0.0
+            sub_records.append({
+                "name": d_name,
+                "url": resolve_url(d_name),
+                "time_text": t_str,
+                "share": share,
+                "seconds": sec,
+            })
+
+        for k_lower, item in bucket["tracked_projects"].items():
+            if k_lower not in seen:
+                share = (item["seconds"] / total_sec * 100.0) if total_sec > 0 else 0.0
                 sub_records.append({
-                    "name": d_name,
-                    "url": resolve_url(d_name),
-                    "time_text": t_str,
+                    "name": item["display_name"],
+                    "url": resolve_url(item["display_name"]),
+                    "time_text": item["time_text"],
                     "share": share,
-                    "seconds": sec,
+                    "seconds": item["seconds"],
                 })
 
-            for k_lower, item in bucket["tracked_projects"].items():
-                if k_lower not in seen:
-                    share = (item["seconds"] / total_sec * 100.0) if total_sec > 0 else 0.0
-                    sub_records.append({
-                        "name": item["display_name"],
-                        "url": resolve_url(item["display_name"]),
-                        "time_text": item["time_text"],
-                        "share": share,
-                        "seconds": item["seconds"],
-                    })
+        sub_records.sort(key=lambda s: s["seconds"], reverse=True)
 
-            sub_records.sort(key=lambda s: s["seconds"], reverse=True)
+        details_blocks.extend([
+            "",
+            "<details>",
+            f"<summary><strong>{g_name} Sub-projects</strong> ▾ (click to expand)</summary>",
+            "<br>",
+            "",
+            "| Sub-project | Time | Share of Cluster |",
+            "| :--- | :--- | :--- |",
+        ])
 
-            lines.append("    <tr>")
-            lines.append('      <td colspan="3">')
-            lines.append("        <details>")
-            lines.append(f'          <summary><strong>{g_name} ({tag_label})</strong> ▾ &nbsp;&nbsp; {r["time_text"]} &nbsp;&nbsp; <code>{bar}</code> {r["percent"]:>5.1f}%</summary>')
-            lines.append("          <br>")
-            lines.append("          <table>")
-            lines.append("            <thead>")
-            lines.append("              <tr>")
-            lines.extend([
-                '                <th align="left">Sub-project</th>',
-                '                <th align="left">Time Invested</th>',
-                '                <th align="left">Share of Cluster</th>'
-            ])
-            lines.append("              </tr>")
-            lines.append("            </thead>")
-            lines.append("            <tbody>")
-            for s in sub_records:
-                s_bar = make_bar(s["share"])
-                lines.append("              <tr>")
-                lines.append(f'                <td><a href="{s["url"]}">{s["name"]}</a></td>')
-                lines.append(f'                <td>{s["time_text"]}</td>')
-                lines.append(f'                <td><code>{s_bar}</code> {s["share"]:>5.1f}%</td>')
-                lines.append("              </tr>")
-            lines.append("            </tbody>")
-            lines.append("          </table>")
-            lines.append("          <br>")
-            lines.append("        </details>")
-            lines.append("      </td>")
-            lines.append("    </tr>")
+        for s in sub_records:
+            s_bar = make_bar(s["share"])
+            details_blocks.append(f"| [{s['name']}]({s['url']}) | {s['time_text']} | `{s_bar}` {s['share']:>5.1f}% |")
 
-    lines.append("  </tbody>")
-    lines.append("</table>")
+        details_blocks.append("")
+        details_blocks.append("</details>")
 
-    return "\n".join(lines) + f"\n{footer}"
+    return "\n".join(lines) + ("\n" + "\n".join(details_blocks) if details_blocks else "") + f"\n{footer}"
 
 def update_readme():
     stats = fetch_hackatime_stats()
