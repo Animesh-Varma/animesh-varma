@@ -8,8 +8,23 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| [Astro](https://github.com/animesh-varma/Astro) | 58 mins | `█████████████████░`  92.8% |
-| [BambuScribe](https://github.com/animesh-varma/BambuScribe) | 4 mins | `█░░░░░░░░░░░░░░░░░`   7.2% |
+| [Astro](https://github.com/animesh-varma/Astro) | 1 hrs 12 mins | `███████████████░░░`  84.3% |
+| **Project Aetherion** (Cluster) | 6 mins | `█░░░░░░░░░░░░░░░░░`   8.1% |
+| [BambuScribe](https://github.com/animesh-varma/BambuScribe) | 6 mins | `█░░░░░░░░░░░░░░░░░`   7.6% |
 
-*Last synced: Oct 20, 00:20 UTC | Next sync: ~Oct 20, 03:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+<details>
+<summary><strong>Project Aetherion Sub-projects</strong> ▾ (click to expand)</summary>
+<br>
+
+| Sub-project | Time | Share of Cluster |
+| :--- | :--- | :--- |
+| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 6 mins | `██████████████████` 100.0% |
+| [Aetherion](https://github.com/animesh-varma/Aetherion) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
+| [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
+| [Aetherion-SDK](https://github.com/animesh-varma/Aetherion-SDK) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
+| [Aetherion-hub](https://github.com/animesh-varma/Aetherion-hub) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
+
+</details>
+
+*Last synced: Oct 20, 08:33 UTC | Next sync: ~Oct 20, 09:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
