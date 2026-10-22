@@ -8,10 +8,10 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| [Astro](https://github.com/animesh-varma/Astro) | 2 hrs 10 mins | `████████████████░░`  90.9% |
-| **Project Aetherion** (Cluster) | 8 mins | `█░░░░░░░░░░░░░░░░░`   6.2% |
-| [Itzforkidz](https://github.com/animesh-varma/Itzforkidz) | 2 mins | `░░░░░░░░░░░░░░░░░░`   1.5% |
-| [BambuScribe](https://github.com/animesh-varma/BambuScribe) | 2 mins | `░░░░░░░░░░░░░░░░░░`   1.4% |
+| [Astro](https://github.com/animesh-varma/Astro) | 2 hrs 10 mins | `███████████████░░░`  82.3% |
+| **Project Aetherion** (Cluster) | 24 mins | `███░░░░░░░░░░░░░░░`  15.1% |
+| [Itzforkidz](https://github.com/animesh-varma/Itzforkidz) | 2 mins | `░░░░░░░░░░░░░░░░░░`   1.3% |
+| [BambuScribe](https://github.com/animesh-varma/BambuScribe) | 2 mins | `░░░░░░░░░░░░░░░░░░`   1.3% |
 
 <details>
 <summary><strong>Project Aetherion Sub-projects</strong> ▾ (click to expand)</summary>
@@ -19,7 +19,7 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 
 | Sub-project | Time | Share of Cluster |
 | :--- | :--- | :--- |
-| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 8 mins | `██████████████████` 100.0% |
+| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 24 mins | `██████████████████` 100.0% |
 | [Aetherion](https://github.com/animesh-varma/Aetherion) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 | [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 | [Aetherion-SDK](https://github.com/animesh-varma/Aetherion-SDK) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
@@ -27,5 +27,5 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 
 </details>
 
-*Last synced: Oct 22, 04:47 UTC | Next sync: ~Oct 22, 06:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Oct 22, 11:54 UTC | Next sync: ~Oct 22, 12:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
