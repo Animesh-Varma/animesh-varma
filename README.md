@@ -8,10 +8,10 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| [Astro](https://github.com/animesh-varma/Astro) | 2 hrs 16 mins | `███████████░░░░░░░`  63.3% |
-| **Project Aetherion** (Cluster) | 1 hrs 2 mins | `█████░░░░░░░░░░░░░`  28.8% |
-| [aerocraft](https://github.com/animesh-varma/aerocraft) | 14 mins | `█░░░░░░░░░░░░░░░░░`   6.9% |
-| [Itzforkidz](https://github.com/animesh-varma/Itzforkidz) | 2 mins | `░░░░░░░░░░░░░░░░░░`   1.0% |
+| [Astro](https://github.com/animesh-varma/Astro) | 1 hrs 16 mins | `█████████░░░░░░░░░`  49.1% |
+| **Project Aetherion** (Cluster) | 1 hrs 2 mins | `███████░░░░░░░░░░░`  40.0% |
+| [aerocraft](https://github.com/animesh-varma/aerocraft) | 14 mins | `██░░░░░░░░░░░░░░░░`   9.5% |
+| [Itzforkidz](https://github.com/animesh-varma/Itzforkidz) | 2 mins | `░░░░░░░░░░░░░░░░░░`   1.4% |
 
 <details>
 <summary><strong>Project Aetherion Sub-projects</strong> ▾ (click to expand)</summary>
@@ -27,5 +27,5 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 
 </details>
 
-*Last synced: Oct 26, 13:04 UTC | Next sync: ~Oct 26, 15:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Oct 26, 20:29 UTC | Next sync: ~Oct 26, 21:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
