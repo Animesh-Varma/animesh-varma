@@ -8,10 +8,10 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| [Astro](https://github.com/animesh-varma/Astro) | 1 hrs 16 mins | `█████████░░░░░░░░░`  49.1% |
-| **Project Aetherion** (Cluster) | 1 hrs 2 mins | `███████░░░░░░░░░░░`  40.0% |
-| [aerocraft](https://github.com/animesh-varma/aerocraft) | 14 mins | `██░░░░░░░░░░░░░░░░`   9.5% |
-| [Itzforkidz](https://github.com/animesh-varma/Itzforkidz) | 2 mins | `░░░░░░░░░░░░░░░░░░`   1.4% |
+| **Project Aetherion** (Cluster) | 51 mins | `█████████░░░░░░░░░`  51.4% |
+| [Astro](https://github.com/animesh-varma/Astro) | 31 mins | `██████░░░░░░░░░░░░`  31.7% |
+| [aerocraft](https://github.com/animesh-varma/aerocraft) | 14 mins | `███░░░░░░░░░░░░░░░`  14.8% |
+| [Itzforkidz](https://github.com/animesh-varma/Itzforkidz) | 2 mins | `░░░░░░░░░░░░░░░░░░`   2.1% |
 
 <details>
 <summary><strong>Project Aetherion Sub-projects</strong> ▾ (click to expand)</summary>
@@ -19,13 +19,13 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 
 | Sub-project | Time | Share of Cluster |
 | :--- | :--- | :--- |
-| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 58 mins | `█████████████████░`  93.6% |
-| [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 4 mins | `█░░░░░░░░░░░░░░░░░`   6.4% |
+| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 49 mins | `█████████████████░`  96.1% |
+| [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 2 mins | `█░░░░░░░░░░░░░░░░░`   3.9% |
 | [Aetherion](https://github.com/animesh-varma/Aetherion) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 | [Aetherion-SDK](https://github.com/animesh-varma/Aetherion-SDK) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 | [Aetherion-hub](https://github.com/animesh-varma/Aetherion-hub) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 
 </details>
 
-*Last synced: Oct 27, 15:21 UTC | Next sync: ~Oct 27, 18:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Oct 27, 22:14 UTC | Next sync: ~Oct 28, 00:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
