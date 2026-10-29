@@ -18,6 +18,7 @@ PROJECT_ALIASES = {
     "plotter": "BambuScribe",
     "aetherion": "Aetherion-App",
     "aetherion-home": "Aetherion",
+    "aerocraft": "AMAZE!!!"
 }
 
 GROUPS_CONFIG = {
