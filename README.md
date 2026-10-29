@@ -8,9 +8,9 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| **Project Aetherion** (Cluster) | 51 mins | `████████████░░░░░░`  65.7% |
-| [aerocraft](https://github.com/animesh-varma/aerocraft) | 14 mins | `███░░░░░░░░░░░░░░░`  19.0% |
-| [Astro](https://github.com/animesh-varma/Astro) | 12 mins | `███░░░░░░░░░░░░░░░`  15.4% |
+| **Project Aetherion** (Cluster) | 57 mins | `████████████░░░░░░`  68.1% |
+| [AMAZE!!!](https://github.com/animesh-varma/AMAZE!!!) | 14 mins | `███░░░░░░░░░░░░░░░`  17.6% |
+| [Astro](https://github.com/animesh-varma/Astro) | 12 mins | `███░░░░░░░░░░░░░░░`  14.3% |
 
 <details>
 <summary><strong>Project Aetherion Sub-projects</strong> ▾ (click to expand)</summary>
@@ -18,13 +18,13 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 
 | Sub-project | Time | Share of Cluster |
 | :--- | :--- | :--- |
-| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 49 mins | `█████████████████░`  96.1% |
-| [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 2 mins | `█░░░░░░░░░░░░░░░░░`   3.9% |
+| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 51 mins | `████████████████░░`  89.5% |
+| [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 6 mins | `██░░░░░░░░░░░░░░░░`  10.5% |
 | [Aetherion](https://github.com/animesh-varma/Aetherion) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 | [Aetherion-SDK](https://github.com/animesh-varma/Aetherion-SDK) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 | [Aetherion-hub](https://github.com/animesh-varma/Aetherion-hub) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 
 </details>
 
-*Last synced: Oct 29, 09:58 UTC | Next sync: ~Oct 29, 12:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Oct 29, 13:13 UTC | Next sync: ~Oct 29, 15:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
