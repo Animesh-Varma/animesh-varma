@@ -8,9 +8,9 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| **Project Aetherion** (Cluster) | 1 hrs 46 mins | `██████████████░░░░`  79.9% |
-| [AMAZE!!!](https://github.com/animesh-varma/AMAZE!!!) | 14 mins | `██░░░░░░░░░░░░░░░░`  11.1% |
-| [Astro](https://github.com/animesh-varma/Astro) | 12 mins | `██░░░░░░░░░░░░░░░░`   9.0% |
+| **Project Aetherion** (Cluster) | 1 hrs 16 mins | `██████████████░░░░`  80.3% |
+| [AMAZE!!!](https://github.com/animesh-varma/AMAZE!!!) | 14 mins | `███░░░░░░░░░░░░░░░`  15.5% |
+| [Astro](https://github.com/animesh-varma/Astro) | 4 mins | `█░░░░░░░░░░░░░░░░░`   4.2% |
 
 <details>
 <summary><strong>Project Aetherion Sub-projects</strong> ▾ (click to expand)</summary>
@@ -18,13 +18,13 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 
 | Sub-project | Time | Share of Cluster |
 | :--- | :--- | :--- |
-| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 1 hrs 36 mins | `████████████████░░`  90.6% |
-| [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 10 mins | `██░░░░░░░░░░░░░░░░`   9.4% |
+| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 1 hrs 6 mins | `████████████████░░`  86.9% |
+| [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 10 mins | `██░░░░░░░░░░░░░░░░`  13.1% |
 | [Aetherion](https://github.com/animesh-varma/Aetherion) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 | [Aetherion-SDK](https://github.com/animesh-varma/Aetherion-SDK) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 | [Aetherion-hub](https://github.com/animesh-varma/Aetherion-hub) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 
 </details>
 
-*Last synced: Oct 29, 18:29 UTC | Next sync: ~Oct 29, 21:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Oct 30, 01:00 UTC | Next sync: ~Oct 30, 03:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
