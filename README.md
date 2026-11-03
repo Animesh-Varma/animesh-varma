@@ -8,9 +8,10 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| **Project Aetherion** (Cluster) | 5 hrs | `███████████████░░░`  83.5% |
+| **Project Aetherion** (Cluster) | 5 hrs | `███████████████░░░`  83.3% |
 | [AMAZE!!!](https://github.com/animesh-varma/AMAZE!!!) | 57 mins | `███░░░░░░░░░░░░░░░`  15.9% |
 | [Astro](https://github.com/animesh-varma/Astro) | 1 mins | `░░░░░░░░░░░░░░░░░░`   0.5% |
+| [Animesh-Varma.github.io](https://github.com/animesh-varma/Animesh-Varma.github.io) | 1 mins | `░░░░░░░░░░░░░░░░░░`   0.3% |
 
 <details>
 <summary><strong>Project Aetherion Sub-projects</strong> ▾ (click to expand)</summary>
@@ -26,5 +27,5 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 
 </details>
 
-*Last synced: Nov 03, 06:48 UTC | Next sync: ~Nov 03, 09:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Nov 03, 17:03 UTC | Next sync: ~Nov 03, 18:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
