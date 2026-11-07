@@ -8,10 +8,10 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| **Project Aetherion** (Cluster) | 4 hrs 4 mins | `██████████░░░░░░░░`  56.5% |
-| [AMAZE!!!](https://github.com/animesh-varma/AMAZE!!!) | 2 hrs 5 mins | `█████░░░░░░░░░░░░░`  29.1% |
-| [Astro](https://github.com/animesh-varma/Astro) | 43 mins | `██░░░░░░░░░░░░░░░░`  10.0% |
-| [Animesh-Varma.github.io](https://github.com/animesh-varma/Animesh-Varma.github.io) | 19 mins | `█░░░░░░░░░░░░░░░░░`   4.4% |
+| **Project Aetherion** (Cluster) | 2 hrs 31 mins | `███████░░░░░░░░░░░`  39.9% |
+| [AMAZE!!!](https://github.com/animesh-varma/AMAZE!!!) | 2 hrs 5 mins | `██████░░░░░░░░░░░░`  33.1% |
+| [Astro](https://github.com/animesh-varma/Astro) | 1 hrs 23 mins | `████░░░░░░░░░░░░░░`  21.9% |
+| [Animesh-Varma.github.io](https://github.com/animesh-varma/Animesh-Varma.github.io) | 19 mins | `█░░░░░░░░░░░░░░░░░`   5.1% |
 
 <details>
 <summary><strong>Project Aetherion Sub-projects</strong> ▾ (click to expand)</summary>
@@ -19,13 +19,13 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 
 | Sub-project | Time | Share of Cluster |
 | :--- | :--- | :--- |
-| [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 3 hrs 6 mins | `██████████████░░░░`  76.1% |
-| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 58 mins | `████░░░░░░░░░░░░░░`  23.9% |
+| [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 1 hrs 50 mins | `█████████████░░░░░`  73.0% |
+| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 40 mins | `█████░░░░░░░░░░░░░`  27.0% |
 | [Aetherion](https://github.com/animesh-varma/Aetherion) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 | [Aetherion-SDK](https://github.com/animesh-varma/Aetherion-SDK) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 | [Aetherion-hub](https://github.com/animesh-varma/Aetherion-hub) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
 
 </details>
 
-*Last synced: Nov 06, 16:46 UTC | Next sync: ~Nov 06, 18:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Nov 07, 05:58 UTC | Next sync: ~Nov 07, 06:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
