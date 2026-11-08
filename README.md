@@ -8,25 +8,10 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| [Astro](https://github.com/animesh-varma/Astro) | 2 hrs 32 mins | `█████████░░░░░░░░░`  50.3% |
-| [AMAZE!!!](https://github.com/animesh-varma/AMAZE!!!) | 2 hrs 5 mins | `███████░░░░░░░░░░░`  41.3% |
-| [Animesh-Varma.github.io](https://github.com/animesh-varma/Animesh-Varma.github.io) | 19 mins | `█░░░░░░░░░░░░░░░░░`   6.3% |
-| [Sigil](https://github.com/animesh-varma/Sigil) | 5 mins | `░░░░░░░░░░░░░░░░░░`   1.6% |
-| **Project Aetherion** (Cluster) | 1 mins | `░░░░░░░░░░░░░░░░░░`   0.4% |
+| [Astro](https://github.com/animesh-varma/Astro) | 2 hrs 35 mins | `██████████░░░░░░░░`  54.8% |
+| [AMAZE!!!](https://github.com/animesh-varma/AMAZE!!!) | 1 hrs 43 mins | `███████░░░░░░░░░░░`  36.6% |
+| [Animesh-Varma.github.io](https://github.com/animesh-varma/Animesh-Varma.github.io) | 19 mins | `█░░░░░░░░░░░░░░░░░`   6.8% |
+| [Sigil](https://github.com/animesh-varma/Sigil) | 5 mins | `░░░░░░░░░░░░░░░░░░`   1.8% |
 
-<details>
-<summary><strong>Project Aetherion Sub-projects</strong> ▾ (click to expand)</summary>
-<br>
-
-| Sub-project | Time | Share of Cluster |
-| :--- | :--- | :--- |
-| [Aetherion-Internal](https://github.com/animesh-varma/Aetherion-Internal) | 1 mins | `██████████████████` 100.0% |
-| [Aetherion](https://github.com/animesh-varma/Aetherion) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
-| [Aetherion-App](https://github.com/animesh-varma/aetherion-app) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
-| [Aetherion-SDK](https://github.com/animesh-varma/Aetherion-SDK) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
-| [Aetherion-hub](https://github.com/animesh-varma/Aetherion-hub) | 0 mins | `░░░░░░░░░░░░░░░░░░`   0.0% |
-
-</details>
-
-*Last synced: Nov 08, 17:56 UTC | Next sync: ~Nov 08, 18:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Nov 08, 22:06 UTC | Next sync: ~Nov 09, 00:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
