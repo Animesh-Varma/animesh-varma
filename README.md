@@ -8,9 +8,8 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| [Astro](https://github.com/animesh-varma/Astro) | 3 hrs 37 mins | `████████████████░░`  90.2% |
-| [Sigil](https://github.com/animesh-varma/Sigil) | 15 mins | `█░░░░░░░░░░░░░░░░░`   6.5% |
-| [AMAZE!!!](https://github.com/animesh-varma/AMAZE!!!) | 8 mins | `█░░░░░░░░░░░░░░░░░`   3.3% |
+| [Astro](https://github.com/animesh-varma/Astro) | 3 hrs | `█████████████████░`  92.0% |
+| [Sigil](https://github.com/animesh-varma/Sigil) | 15 mins | `█░░░░░░░░░░░░░░░░░`   8.0% |
 
-*Last synced: Nov 13, 10:59 UTC | Next sync: ~Nov 13, 12:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Nov 13, 19:42 UTC | Next sync: ~Nov 13, 21:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
