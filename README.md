@@ -8,10 +8,10 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| [Astro](https://github.com/animesh-varma/Astro) | 33 mins | `████████████░░░░░░`  67.7% |
-| [sector_0](https://github.com/animesh-varma/sector_0) | 10 mins | `████░░░░░░░░░░░░░░`  21.6% |
-| [animesh_varma](https://github.com/animesh-varma/animesh_varma) | 5 mins | `██░░░░░░░░░░░░░░░░`  10.7% |
-| [STATERA](https://github.com/animesh-varma/STATERA) | < 1 min | `░░░░░░░░░░░░░░░░░░`   0.1% |
+| [animesh_varma](https://github.com/animesh-varma/animesh_varma) | 8 hrs 3 mins | `████████████░░░░░░`  69.3% |
+| [STATERA](https://github.com/animesh-varma/STATERA) | 2 hrs 3 mins | `███░░░░░░░░░░░░░░░`  17.7% |
+| [ComfyUI](https://github.com/animesh-varma/ComfyUI) | 47 mins | `█░░░░░░░░░░░░░░░░░`   6.8% |
+| [sector_0](https://github.com/animesh-varma/sector_0) | 43 mins | `█░░░░░░░░░░░░░░░░░`   6.2% |
 
-*Last synced: Nov 17, 16:00 UTC | Next sync: ~Nov 17, 18:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Nov 18, 00:57 UTC | Next sync: ~Nov 18, 03:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
