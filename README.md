@@ -8,9 +8,9 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| [animesh_varma](https://github.com/animesh-varma/animesh_varma) | 5 hrs 33 mins | `██████████████░░░░`  77.1% |
-| [STATERA](https://github.com/animesh-varma/STATERA) | 51 mins | `██░░░░░░░░░░░░░░░░`  11.8% |
-| [ComfyUI](https://github.com/animesh-varma/ComfyUI) | 47 mins | `██░░░░░░░░░░░░░░░░`  11.1% |
+| [animesh_varma](https://github.com/animesh-varma/animesh_varma) | 4 hrs 37 mins | `██████████████░░░░`  79.6% |
+| [ComfyUI](https://github.com/animesh-varma/ComfyUI) | 47 mins | `██░░░░░░░░░░░░░░░░`  13.7% |
+| [STATERA](https://github.com/animesh-varma/STATERA) | 23 mins | `█░░░░░░░░░░░░░░░░░`   6.7% |
 
-*Last synced: Nov 20, 11:41 UTC | Next sync: ~Nov 20, 12:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Nov 20, 20:21 UTC | Next sync: ~Nov 20, 21:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
