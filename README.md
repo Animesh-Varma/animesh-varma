@@ -6,10 +6,7 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 *Note: If a project link returns a 404, the repository is currently private or in active development and has not been publicly released yet.*
 
 <!-- HACKATIME-START -->
-| Project | Time | Share |
-| :--- | :--- | :--- |
-| [animesh_varma](https://github.com/animesh-varma/animesh_varma) | 15 mins | `██████████████████`  99.8% |
-| [STATERA](https://github.com/animesh-varma/STATERA) | < 1 min | `░░░░░░░░░░░░░░░░░░`   0.2% |
+*No tracked coding activity recorded for the past 7 days.*
 
-*Last synced: Nov 24, 13:44 UTC | Next sync: ~Nov 24, 15:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Nov 24, 23:53 UTC | Next sync: ~Nov 25, 00:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
