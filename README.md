@@ -6,7 +6,10 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 *Note: If a project link returns a 404, the repository is currently private or in active development and has not been publicly released yet.*
 
 <!-- HACKATIME-START -->
-*No tracked coding activity recorded for the past 7 days.*
+| Project | Time | Share |
+| :--- | :--- | :--- |
+| [WRAITH](https://github.com/animesh-varma/WRAITH) | 1 hrs 49 mins | `███████████████░░░`  80.8% |
+| [Anime](https://github.com/animesh-varma/Anime) | 26 mins | `███░░░░░░░░░░░░░░░`  19.2% |
 
-*Last synced: Nov 25, 08:35 UTC | Next sync: ~Nov 25, 09:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Nov 25, 19:16 UTC | Next sync: ~Nov 25, 21:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
