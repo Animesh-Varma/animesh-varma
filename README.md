@@ -8,8 +8,7 @@ Attached is my tracked coding activity over the past 7 days to provide an estima
 <!-- HACKATIME-START -->
 | Project | Time | Share |
 | :--- | :--- | :--- |
-| [WRAITH](https://github.com/animesh-varma/WRAITH) | 1 hrs 49 mins | `███████████████░░░`  80.8% |
-| [Anime](https://github.com/animesh-varma/Anime) | 26 mins | `███░░░░░░░░░░░░░░░`  19.2% |
+| [WRAITH](https://github.com/animesh-varma/WRAITH) | 4 mins | `██████████████████` 100.0% |
 
-*Last synced: Nov 26, 16:55 UTC | Next sync: ~Nov 26, 18:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
+*Last synced: Nov 27, 01:44 UTC | Next sync: ~Nov 27, 03:15 UTC via [Hackatime](https://hackatime.hackclub.com/@animesh-varma).*
 <!-- HACKATIME-END -->
